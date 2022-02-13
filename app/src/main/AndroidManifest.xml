@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="asd.datenbank2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StudiengangActivity" />
+        <activity android:name=".NameActivity" />
+        <activity android:name=".FrageActivity" />
+        <activity android:name=".GnActivity" />
+        <activity android:name=".GmActivity" />
+        <activity android:name=".EditActivity" />
+        <activity android:name=".CustomfActivity" />
+
+        <receiver android:name=".Reciever" />
+
+        <activity android:name=".WeckerActivity" />
+
+        <service android:name=".PlaySoundService" />
+
+        <activity android:name=".Anleitung"></activity>
+    </application>
+
+</manifest>
